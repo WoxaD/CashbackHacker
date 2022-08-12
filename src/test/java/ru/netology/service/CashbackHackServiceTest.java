@@ -4,7 +4,7 @@ import static org.testng.Assert.*;
 
 public class CashbackHackServiceTest {
 
-    @org.junit.Test
+    @org.testng.annotations.Test
     public void shouldReturnTheMissingAmountToReceiveACashback() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int sum = 900;
@@ -12,7 +12,7 @@ public class CashbackHackServiceTest {
         assertEquals(cashbackHackService.remain(sum), 100);
     }
 
-    @org.junit.Test
+    @org.testng.annotations.Test
     public void shouldReturnTheMissingAmountToReceiveACashbackIfMoreThan1000AreSpent() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int sum = 1050;
@@ -20,7 +20,7 @@ public class CashbackHackServiceTest {
         assertEquals(cashbackHackService.remain(sum), 950);
     }
 
-    @org.junit.Test
+    @org.testng.annotations.Test
     public void shouldReturnTheMissingAmountToReceiveACashbackIfNothingNeedsToBeBoughtInAddition() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int sum = 1000;
