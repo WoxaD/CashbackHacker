@@ -9,7 +9,7 @@ public class CashbackHackServiceTest {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int sum = 900;
 
-        assertEquals(cashbackHackService.remain(sum), 100);
+        assertEquals(100, cashbackHackService.remain(sum));
     }
 
     @org.junit.Test
@@ -17,7 +17,7 @@ public class CashbackHackServiceTest {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int sum = 1050;
 
-        assertEquals(cashbackHackService.remain(sum), 950);
+        assertEquals(950, cashbackHackService.remain(sum));
     }
 
     @org.junit.Test
@@ -25,6 +25,6 @@ public class CashbackHackServiceTest {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int sum = 1000;
 
-        assertEquals(cashbackHackService.remain(sum), 0);
+        assertEquals(0, cashbackHackService.remain(sum));
     }
 }
